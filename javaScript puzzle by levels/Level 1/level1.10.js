@@ -5,6 +5,15 @@ Level 1.10
 Заполните массив случайными числами из промежутка от 1 до 100.
 Fill the array with random numbers from 1 to 100.
 */
+(() => {
+  function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min; //Максимум и минимум включаются
+  }
+
+  console.log(getRandomIntInclusive(1, 100));
+})();
 /*
 #2
 Дано некоторое число:
@@ -16,6 +25,9 @@ Given a number:
 12345
 Print to the console all its characters from the end.
 */
+((num) => {
+  console.log(Array.from(String(num), Number).reverse().join(""));
+})(12345);
 /*
 No. 3
 Дан некоторый массив, например, вот такой:
@@ -36,6 +48,7 @@ Print the sub-arrays of the two elements of our array to the console one by one:
 [3, 4]
 [5, 6]
 */
+
 /*
 #4
 Даны два массива:
@@ -54,3 +67,6 @@ Merge these arrays into a new array:
 
 [1, 2, 3, 4, 5, 6]
 */
+((first, second) => {
+  console.log(first.concat(second));
+})([1, 2, 3], [4, 5, 6]);

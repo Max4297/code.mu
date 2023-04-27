@@ -15,3 +15,6 @@ No. 3
 Дан массив с числами. Увеличьте каждое число из массива на 10 процентов.
 Given an array of numbers. Increase each number in the array by 10 percent.
 */
+((array) => {
+  console.log(array.map((a) => a / 10 + a));
+})([3, 3, 2, 5, 100]);
