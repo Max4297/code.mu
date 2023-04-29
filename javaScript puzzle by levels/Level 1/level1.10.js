@@ -44,11 +44,21 @@ Given an array, for example, this one:
 [1, 2, 3, 4, 5, 6]
 Print the sub-arrays of the two elements of our array to the console one by one:
 
-[12]
+[1, 2]
 [3, 4]
 [5, 6]
 */
-
+((array) => {
+  let count = array.length / 2;
+  for (let i = 0; i < count; i++) {
+    let newArray = [];
+    for (let j = 0; j < 2; j++) {
+      newArray.push(array[j]);
+    }
+    array.splice(0, 2);
+    console.log(newArray);
+  }
+})([1, 2, 3, 4, 5, 6]);
 /*
 #4
 Даны два массива:
