@@ -66,3 +66,9 @@ Capitalize the first character of each word in this line. In our case, it should
 
 'Aaa Bbb Ccc'
 */
+((str) => {
+  let word = str.replace(/(^|\s)\S/g, (letter) => {
+    return letter.toUpperCase();
+  });
+  console.log(word);
+})("hello word how are you?");
