@@ -18,6 +18,15 @@ Given a string with letters and numbers. Check that there are no more than three
 Дано число. Получите первую четную цифру с конца этого числа.
 Given a number. Get the first even digit from the end of this number.
 */
+((num) => {
+  let array = String(num).split("");
+  let res;
+  console.log(array);
+  array.forEach((element) => {
+    element % 2 == 0 ? (res = element) : 0;
+  });
+  console.log(res);
+})(795862363);
 /*
 No. 3
 Дана некоторая строка:
@@ -33,6 +42,9 @@ Replace the first character of each word in it with '!':
 
 '!bcde !bcde !bcde'
 */
+((word) => {
+  console.log(word.replace(/(^|\s)\S/g, " !").trim());
+})("abcde abcde abcde");
 /*
 #4
 Дан массив с числами:
@@ -44,3 +56,6 @@ Given an array with numbers:
 [1, 2, 3, 3, 4, 5]
 Check that this array has two identical elements in a row.
 */
+((array) => {
+  console.log(/([0-9])\1/g.test(array.join("")));
+})([1, 2, 3, 3, 4, 5]);
