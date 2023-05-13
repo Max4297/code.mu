@@ -29,8 +29,8 @@ Remove all empty strings from the array.
 
 [1, '', 2, 3, '', 5]
 */
-((elem) => {
-  console.log(elem.join("").split(""));
+((array) => {
+  console.log(array.filter((elem) => /\d/.test(elem)));
 })([1, "", 2, 3, "", 5]);
 /*
 No. 3
