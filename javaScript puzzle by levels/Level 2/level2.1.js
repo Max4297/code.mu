@@ -1,16 +1,16 @@
 /*
 Level 2.1
 #1
-Дана некоторая строка. Найдите позицию первого нуля в строке.
 Given a string. Find the position of the first zero in the string.
+Дана некоторая строка. Найдите позицию первого нуля в строке.
 */
 ((string) => {
   console.log(string.indexOf("0"));
 })("lk;l;ds5s0sac4dd");
 /*
 #2
-Выведите в консоль все числа в промежутке от 1 до 1000, сумма первой и второй цифры которых равна пяти.
 Print to the console all numbers between 1 and 1000 whose sum of the first and second digits is five.
+Выведите в консоль все числа в промежутке от 1 до 1000, сумма первой и второй цифры которых равна пяти.
 */
 (() => {
   for (let i = 1; i <= 1000; i++) {
@@ -24,8 +24,8 @@ Print to the console all numbers between 1 and 1000 whose sum of the first and s
 
 /*
 No. 3
-Дан массив. Удалите из него элементы с заданным значением.
 Given an array. Remove elements with the given value from it.
+Дан массив. Удалите из него элементы с заданным значением.
 */
 ((elem) => {
   let array = [4, 6, 7, 5, 7, 8, 6];
@@ -43,15 +43,15 @@ Given an array. Remove elements with the given value from it.
 
 /*
 #4
-Дан некоторый массив, например, вот такой:
-
-[1, 2, 3, 4, 5, 6]
-Найдите сумму первой половины элементов этого массива.
-
 Given an array, for example, this one:
 
 [1, 2, 3, 4, 5, 6]
 Find the sum of the first half of the elements of this array.
+
+Дан некоторый массив, например, вот такой:
+
+[1, 2, 3, 4, 5, 6]
+Найдите сумму первой половины элементов этого массива.
 */
 ((array) => {
   let sum = 0;

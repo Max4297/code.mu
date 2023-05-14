@@ -1,8 +1,8 @@
 /*
 Level 2.2
 #1
-Дан массив с числами. Подсчитайте количество отрицательных чисел в этом массиве.
 Given an array of numbers. Count the number of negative numbers in this array.
+Дан массив с числами. Подсчитайте количество отрицательных чисел в этом массиве.
 */
 ((array) => {
   let count = 0;
@@ -13,38 +13,38 @@ Given an array of numbers. Count the number of negative numbers in this array.
 })([6, -4, -4, 4, -3, 2, 1, -2]);
 /*
 #2
-Дан массив с числами. Оставьте в нем только положительные числа.
 Given an array of numbers. Leave only positive numbers in it.
+Дан массив с числами. Оставьте в нем только положительные числа.
 */
 ((array) => {
   console.log(array.filter((a) => a > 0));
 })([6, -4, -4, 4, -3, 2, 1, -2]);
 /*
 No. 3
-Дана строка. Удалите предпоследний символ из этой строки.
 Given a line. Remove the penultimate character from this string.
+Дана строка. Удалите предпоследний символ из этой строки.
 */
 ((str) => {
   console.log(str.slice(0, str.length - 1));
 })("qoe");
 /*
 #4
-Дана некоторая строка. Найдите позицию первого нуля в строке.
 Given a string. Find the position of the first zero in the string.
+Дана некоторая строка. Найдите позицию первого нуля в строке.
 */
 ((string) => {
   console.log(string.indexOf("0"));
 })("hell0");
 /*
 #5
-Дан некоторый массив, например, вот такой:
-
-[1, 2, 3, 4, 5, 6]
-Поделите сумму первой половины элементов этого массива на сумму второй половины элементов.
 Given an array, for example, this one:
 
 [1, 2, 3, 4, 5, 6]
 Divide the sum of the first half of the elements in this array by the sum of the second half of the elements.
+Дан некоторый массив, например, вот такой:
+
+[1, 2, 3, 4, 5, 6]
+Поделите сумму первой половины элементов этого массива на сумму второй половины элементов.
 */
 ((array) => {
   let sum1 = 0;

@@ -1,8 +1,8 @@
 /*
 Level 1.4
 #1
-Выведите в консоль все целые числа от 1 до 100.
 Print all integers from 1 to 100 to the console.
+Выведите в консоль все целые числа от 1 до 100.
 */
 (() => {
   for (let i = 1; i <= 100; i++) {
@@ -11,8 +11,8 @@ Print all integers from 1 to 100 to the console.
 })();
 /*
 #2
-Выведите в консоль все целые числа от -100 до 0.
 Print all integers from -100 to 0 to the console.
+Выведите в консоль все целые числа от -100 до 0.
 */
 (() => {
   for (let i = -1; i >= -100; i--) {
@@ -21,8 +21,8 @@ Print all integers from -100 to 0 to the console.
 })();
 /*
 No. 3
-Выведите в консоль все целые числа от 100 до 1.
 Print all integers from 100 to 1 to the console.
+Выведите в консоль все целые числа от 100 до 1.
 */
 (() => {
   for (let i = 100; i == 0; i--) {
@@ -31,8 +31,8 @@ Print all integers from 100 to 1 to the console.
 })();
 /*
 #4
-Выведите в консоль все четные числа из промежутка от 1 до 100.
 Print to the console all even numbers between 1 and 100.
+Выведите в консоль все четные числа из промежутка от 1 до 100.
 */
 (() => {
   for (let i = 2; i <= 100; i += 2) {
@@ -41,8 +41,8 @@ Print to the console all even numbers between 1 and 100.
 })();
 /*
 #5
-Выведите в консоль все числа кратные трем в промежутке от 1 до 100.
 Print to the console all numbers that are multiples of 3 between 1 and 100.
+Выведите в консоль все числа кратные трем в промежутке от 1 до 100.
 */
 (() => {
   for (let i = 3; i <= 100; i += 3) {

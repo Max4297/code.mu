@@ -1,9 +1,8 @@
 /*
 Level 1.9
-
 #1
-Дан массив со строками. Оставьте в этом массиве только те строки, которые начинаются на http://.
 Given an array with strings. Leave only those lines in this array that start with http://.
+Дан массив со строками. Оставьте в этом массиве только те строки, которые начинаются на http://.
 */
 (() => {
   var array = ["http://", "http://sadasd", "3323sdsd"];
@@ -15,21 +14,19 @@ Given an array with strings. Leave only those lines in this array that start wit
 })();
 /*
 #2
-Дан массив со строками. Оставьте в этом массиве только те строки, которые заканчиваются на .html.
 Given an array with strings. Leave only those lines in this array that end with .html.
+Дан массив со строками. Оставьте в этом массиве только те строки, которые заканчиваются на .html.
 */
-
 (() => {
   var array = ["http://", "http://sadasd.html", "3323sdsd.html"];
   var element = ".html";
   array = array.filter((el) => el.endsWith(element));
   console.log(array);
 })();
-
 /*
 No. 3
-Дан массив с числами. Увеличьте каждое число из массива на 10 процентов.
 Given an array of numbers. Increase each number in the array by 10 percent.
+Дан массив с числами. Увеличьте каждое число из массива на 10 процентов.
 */
 ((array) => {
   console.log(array.map((a) => a / 10 + a));
