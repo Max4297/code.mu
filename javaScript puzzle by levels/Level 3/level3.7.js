@@ -126,3 +126,31 @@ let data = [
 	},
 ];
 */
+(() => {
+  let sum = 0;
+  let data = [
+    {
+      1: [1, 2, 3],
+      2: [1, 2, 3],
+      3: [1, 2, 3],
+    },
+    {
+      1: [1, 2, 3],
+      2: [1, 2, 3],
+      3: [1, 2, 3],
+    },
+    {
+      1: [1, 2, 3],
+      2: [1, 2, 3],
+      3: [1, 2, 3],
+    },
+  ];
+  for (const elem of data) {
+    for (const key in elem) {
+      for (const iterator of elem[key]) {
+        sum += iterator;
+      }
+    }
+  }
+  console.log(sum);
+})();
