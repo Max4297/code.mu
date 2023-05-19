@@ -64,21 +64,44 @@ Given a number. Check that this number has only one divisor besides itself and o
 Numbers are written separated by commas. Get the maximum of these numbers.
 Через запятую написаны числа. Получите максимальное из этих чисел.
 */
+((...rest) => {
+  console.log(Math.max(...rest));
+})(9, 67, 4, 3, 1, 100);
 /*
 #6
 Given an array of numbers. After each single-digit number, insert another one of the same.
 Дан массив с числами. После каждого однозначного числа вставьте еще такое же.
 */
+((array) => {
+  let newArray = [];
+  array.forEach((elem) => {
+    newArray.push(elem);
+    if (elem / 10 < 1 || elem == 0) {
+      newArray.push(elem);
+    }
+  });
+  console.log(newArray);
+})([9, 67, 4, 3, 1, 100, 0]);
 /*
 #7
 Given a line. Remove all vowels from it.
 Дана строка. Удалите из нее все гласные буквы.
 */
+((str) => {
+  console.log(str.replace(/[aeiouy]/g, ""));
+})("Given a line. Remove all vowels from it.");
 /*
 #8
 Given a line. Capitalize the last letter of every word on this line.
 Дана строка. Сделайте заглавной последнюю букву каждого слова в этой строке.
 */
+((str) => {
+  console.log(
+    str.replace(/\S(\s|\.)/g, function (a) {
+      return a.toUpperCase();
+    })
+  );
+})("Given a line. Remove all vowels from it.");
 /*
 #9
 Given the following structure:
