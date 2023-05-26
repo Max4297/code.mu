@@ -48,12 +48,31 @@ Two numbers are given. Get an array of digits that are in both one and the secon
 Given a number. Get an array of the position of all 3 digits in this number, except for the first and last.
 Дано число. Получите массив позицией всех цифр 3 в этом числе, за исключением первой и последней.
 */
-((num1) => {})(3135333);
+((num1) => {
+  let array = Array.from(String(num1), Number).entries();
+  let newArray = [];
+  for (const [key, value] of array) {
+    if (value == 3) {
+      newArray.push(key);
+    }
+  }
+  newArray.shift();
+  newArray.pop();
+  console.log(newArray);
+})(31353336);
 /*
 #5
 Given an array of numbers. Leave in it numbers consisting of different numbers, and delete the rest.
 Дан массив со числами. Оставьте в нем числа, состоящие из разных цифр, а остальные удалите.
 */
+((array) => {
+  function func(value) {
+    let array = Array.from(String(value));
+    return array.every((elem) => elem == array[0]);
+  }
+
+  console.log(array.filter(func));
+})([111, 4444, 5325, 554, 777, 845]);
 /*
 #6
 Given an array:
@@ -66,3 +85,10 @@ Merge the elements of this array into a single one-dimensional array:
 Слейте элементы этого массива в один одномерный массив:
 [1, 2, 3, 4, 5, 6, 7, 8, 9]
 */
+((array) => {
+  console.log(array.flat());
+})([
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+]);
