@@ -51,9 +51,7 @@ Make a function that will fill the array with random Latin letters.
 (() => {
   let array = [];
   for (let i = 0; i < 10; i++) {
-    array.push(
-      String.fromCharCode(Number.parseInt(Math.random() * (122 - 97) + 97))
-    );
+    array.push(String.fromCharCode(Math.random() * (122 - 97) + 97));
   }
   console.log(array);
 })();
