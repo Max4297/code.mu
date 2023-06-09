@@ -16,7 +16,11 @@ Make a function that takes two arrays as a parameter and returns an array of the
 Сделайте функцию, которая параметром будет принимать два массива и возвращать массив их общих элементов.
 */
 ((array1, array2) => {
-  console.log(array1.concat(array2));
+  let newArray1 = array1.filter((elem) => array2.includes(elem));
+  let newArray2 = array2.filter((elem) => array1.includes(elem));
+  let set = new Set(newArray1.concat(newArray2));
+  let res = Array.from(set);
+  console.log(res);
 })([1, 2, 3, 4, 5, 6], [65, 23, 6, 8, 5]);
 /*
 No. 3
