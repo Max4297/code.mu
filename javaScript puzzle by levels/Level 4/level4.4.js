@@ -96,7 +96,7 @@ Make a parameter that will take a number and check if it's prime or not.
   function simple() {
     let sum = 0;
 
-    for (let i = 2; i <= num; i++) {
+    for (let i = 1; i <= num; i++) {
       if (num % i == 0) {
         sum++;
       }
@@ -107,7 +107,7 @@ Make a parameter that will take a number and check if it's prime or not.
     return "Число простое";
   }
   console.log(simple());
-})(19);
+})(25);
 /*
 #5
 Make a parameter that will take a number and remove even digits from it.
