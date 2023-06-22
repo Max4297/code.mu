@@ -1,0 +1,25 @@
+div {
+  width: 500px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+
+.link {
+  position: relative;
+}
+
+.link::before {
+  content: attr(href);
+  position: absolute;
+  top: -30px;
+  left: 0;
+  background: white;
+  padding: 2px;
+  border: 1px solid black;
+  display: none;
+}
+
+.link:hover::before {
+  display: block;
+}
