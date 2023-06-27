@@ -1,13 +1,36 @@
 body {
-  background-color: darkgray;
+  background-color: rgb(187, 248, 179);
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.task {
+  max-width: 750px;
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-bottom: 0;
+}
+
+.article {
+  margin-bottom: 0;
+  font-size: 35px;
+  font-weight: 700;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.keyboard {
   width: 785px;
   display: flex;
   border: 1px solid black;
   padding: 10px;
   background-color: rgb(127, 177, 235);
+  margin: 40px auto;
 }
 
 .left {
@@ -16,6 +39,14 @@ body {
 }
 
 .line {
+  display: flex;
+}
+
+.line__simple-keys {
+  display: flex;
+}
+
+.line__special-keys {
   display: flex;
 }
 
@@ -29,42 +60,53 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(224, 245, 32, 0.2);
+  background-color: rgba(255, 255, 182, 0.726);
   font-weight: 700;
+  cursor: pointer;
+  caret-color: transparent;
+  color: #000;
 }
 
 .line__key:hover {
-  cursor: pointer;
-  background-color: rgb(43, 39, 39, 0.3);
-  color: white;
+  background-color: rgba(187, 65, 65, 0.3);
+  color: black;
 }
 
-.line__key--backspace {
+.line__key-backspace {
   min-width: 77px;
 }
 
-.line__key--shift {
+.line__key-shift {
   min-width: 70px;
 }
 
-.line__key--space {
+.line__key--pushed {
+  background-color: rgba(33, 51, 209, 0.438);
+  color: white;
+}
+
+.line__key--pushed:hover {
+  background-color: rgba(33, 51, 209, 0.438);
+}
+
+.line__key-space {
   min-width: 277px;
 }
 
-.line__key--Enter {
+.line__key-Enter {
   width: 70px;
   height: 62px;
   position: absolute;
-  right: 5px;
+  right: 4px;
   top: 89px;
 }
 
-.line__key--biggerKey {
+.line__key-biggerKey {
   min-width: 27.6px;
   height: 25px;
 }
 
-.line__key--specialKey {
+.line__key-specialKey {
   min-width: 45px;
   height: 43.5px;
 }
@@ -78,4 +120,12 @@ body {
 .right {
   display: flex;
   flex-wrap: wrap;
+}
+
+#input {
+  padding: 10px;
+  width: 500px;
+  display: block;
+  margin: 30px auto;
+  outline: none;
 }

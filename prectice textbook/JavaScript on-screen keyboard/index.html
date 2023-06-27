@@ -3,117 +3,151 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="wclassth=device-wclassth, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <div class="left">
-        <div class="line">
-          <div class="line__key line__key--biggerKey">Esc</div>
-          <div class="line__key line__key--biggerKey">F1</div>
-          <div class="line__key line__key--biggerKey">F2</div>
-          <div class="line__key line__key--biggerKey">F3</div>
-          <div class="line__key line__key--biggerKey">F4</div>
-          <div class="line__key line__key--biggerKey">F5</div>
-          <div class="line__key line__key--biggerKey">F6</div>
-          <div class="line__key line__key--biggerKey">F7</div>
-          <div class="line__key line__key--biggerKey">F8</div>
-          <div class="line__key line__key--biggerKey">F9</div>
-          <div class="line__key line__key--biggerKey">F10</div>
-          <div class="line__key line__key--biggerKey">F11</div>
-          <div class="line__key line__key--biggerKey">F12</div>
-        </div>
-        <div class="line">
-          <div class="line__key">`</div>
-          <div class="line__key">1</div>
-          <div class="line__key">2</div>
-          <div class="line__key">3</div>
-          <div class="line__key">4</div>
-          <div class="line__key">5</div>
-          <div class="line__key">6</div>
-          <div class="line__key">7</div>
-          <div class="line__key">8</div>
-          <div class="line__key">9</div>
-          <div class="line__key">0</div>
-          <div class="line__key">-</div>
-          <div class="line__key">=</div>
-          <div class="line__key line__key--backspace">Backspace</div>
-        </div>
-        <div class="line">
-          <div class="line__key line__key--tab">Tab</div>
-          <div class="line__key">Q</div>
-          <div class="line__key">W</div>
-          <div class="line__key">E</div>
-          <div class="line__key">R</div>
-          <div class="line__key">T</div>
-          <div class="line__key">Y</div>
-          <div class="line__key">U</div>
-          <div class="line__key">I</div>
-          <div class="line__key">O</div>
-          <div class="line__key">P</div>
-          <div class="line__key">{</div>
-          <div class="line__key">}</div>
-        </div>
-        <div class="line">
-          <div class="line__key">Caps Lock</div>
-          <div class="line__key">A</div>
-          <div class="line__key">S</div>
-          <div class="line__key">D</div>
-          <div class="line__key">F</div>
-          <div class="line__key">G</div>
-          <div class="line__key">H</div>
-          <div class="line__key">J</div>
-          <div class="line__key">K</div>
-          <div class="line__key">L</div>
-          <div class="line__key">;</div>
-          <div class="line__key">'</div>
-        </div>
-        <div class="line">
-          <div class="line__key line__key--shift">Shift</div>
-          <div class="line__key">Z</div>
-          <div class="line__key">X</div>
-          <div class="line__key">C</div>
-          <div class="line__key">V</div>
-          <div class="line__key">B</div>
-          <div class="line__key">N</div>
-          <div class="line__key">M</div>
-          <div class="line__key">,</div>
-          <div class="line__key">.</div>
-          <div class="line__key">/</div>
-          <div class="line__key">\</div>
-          <div class="line__key line__key--shift">Shift</div>
-        </div>
-        <div class="line">
-          <div class="line__key line__key--biggerKey">Ctrl</div>
-          <div class="line__key line__key--biggerKey">FN</div>
-          <div class="line__key line__key--biggerKey">Alt</div>
-          <div class="line__key line__key--space">Space</div>
-          <div class="line__key line__key--biggerKey">Alt</div>
-          <div class="line__key line__key--biggerKey">
-            <img class="line__key-img" src="images/windows.svg" alt="" />
+      <p class="article">Экранная клавиатура</p>
+      <p class="task">
+        Давайте реализуем экранную клавиатуру. На ней должны быть кнопочки со
+        всеми буквами и цифрами клавиатуры компьютера. Кликая мышкой по этим
+        кнопочкам мы сможем вводить данные, например, при неработающей
+        клавиатуре.
+      </p>
+      <p class="task">
+        №1 Реализуйте описанную клавиатуру. Пусть эта клавиатура будет привязана
+        к какому-нибудь инпуту, то есть кликая по ней, мы будем вводить данные в
+        этот инпут.
+      </p>
+      <p class="task">
+        №2 Сделайте на вашей клавиатуре кнопку Caps Lock, которая будет делать
+        так, чтобы все буквы переводились в верхний регистр.
+      </p>
+      <div class="keyboard">
+        <div class="left">
+          <div id="zeroLine" class="line">
+            <div class="line__key line__key-biggerKey">Esc</div>
+            <div class="line__key line__key-biggerKey">F1</div>
+            <div class="line__key line__key-biggerKey">F2</div>
+            <div class="line__key line__key-biggerKey">F3</div>
+            <div class="line__key line__key-biggerKey">F4</div>
+            <div class="line__key line__key-biggerKey">F5</div>
+            <div class="line__key line__key-biggerKey">F6</div>
+            <div class="line__key line__key-biggerKey">F7</div>
+            <div class="line__key line__key-biggerKey">F8</div>
+            <div class="line__key line__key-biggerKey">F9</div>
+            <div class="line__key line__key-biggerKey">F10</div>
+            <div class="line__key line__key-biggerKey">F11</div>
+            <div class="line__key line__key-biggerKey">F12</div>
           </div>
-          <div class="line__key line__key--biggerKey">
-            <img class="line__key-img" src="images/context.png" alt="" />
+          <div id="firstLine" class="line">
+            <div class="line__simple-keys">
+              <div class="line__key">`</div>
+              <div class="line__key">1</div>
+              <div class="line__key">2</div>
+              <div class="line__key">3</div>
+              <div class="line__key">4</div>
+              <div class="line__key">5</div>
+              <div class="line__key">6</div>
+              <div class="line__key">7</div>
+              <div class="line__key">8</div>
+              <div class="line__key">9</div>
+              <div class="line__key">0</div>
+              <div class="line__key">-</div>
+              <div class="line__key">=</div>
+            </div>
+            <div class="line__special-keys">
+              <div class="line__key line__key-backspace">Backspace</div>
+            </div>
           </div>
-          <div class="line__key line__key--biggerKey">Ctrl</div>
+          <div id="secondLine" class="line">
+            <div class="line__special-keys">
+              <div class="line__key line__key-tab">Tab</div>
+            </div>
+            <div class="line__simple-keys">
+              <div class="line__key">Q</div>
+              <div class="line__key">W</div>
+              <div class="line__key">E</div>
+              <div class="line__key">R</div>
+              <div class="line__key">T</div>
+              <div class="line__key">Y</div>
+              <div class="line__key">U</div>
+              <div class="line__key">I</div>
+              <div class="line__key">O</div>
+              <div class="line__key">P</div>
+              <div class="line__key">{</div>
+              <div class="line__key">}</div>
+            </div>
+          </div>
+          <div id="thirdLine" class="line">
+            <div class="line__special-keys">
+              <div class="line__key line__key-capsLock">Caps Lock</div>
+            </div>
+            <div class="line__simple-keys">
+              <div class="line__key">A</div>
+              <div class="line__key">S</div>
+              <div class="line__key">D</div>
+              <div class="line__key">F</div>
+              <div class="line__key">G</div>
+              <div class="line__key">H</div>
+              <div class="line__key">J</div>
+              <div class="line__key">K</div>
+              <div class="line__key">L</div>
+              <div class="line__key">;</div>
+              <div class="line__key">'</div>
+            </div>
+          </div>
+          <div id="fourthLine" class="line">
+            <div class="line__special-keys">
+              <div class="line__key line__key-shift">Shift</div>
+            </div>
+            <div class="line__simple-keys">
+              <div class="line__key">Z</div>
+              <div class="line__key">X</div>
+              <div class="line__key">C</div>
+              <div class="line__key">V</div>
+              <div class="line__key">B</div>
+              <div class="line__key">N</div>
+              <div class="line__key">M</div>
+              <div class="line__key">,</div>
+              <div class="line__key">.</div>
+              <div class="line__key">/</div>
+              <div class="line__key">\</div>
+            </div>
+            <div class="line__special-keys">
+              <div class="line__key line__key-shift">Shift</div>
+            </div>
+          </div>
+          <div id="fifthLine" class="line">
+            <div class="line__key line__key-biggerKey">Ctrl</div>
+            <div class="line__key line__key-biggerKey">FN</div>
+            <div class="line__key line__key-biggerKey">Alt</div>
+            <div class="line__key line__key-space">Space</div>
+            <div class="line__key line__key-biggerKey">Alt</div>
+            <div class="line__key line__key-biggerKey">
+              <img class="line__key-img" src="images/windows.svg" alt="" />
+            </div>
+            <div class="line__key line__key-biggerKey">
+              <img class="line__key-img" src="images/context.png" alt="" />
+            </div>
+            <div class="line__key line__key-biggerKey">Ctrl</div>
+          </div>
+          <div class="line__key line__key-Enter">Enter</div>
         </div>
-        <div class="line__key line__key--Enter">Enter</div>
+        <div class="right">
+          <div class="line__key line__key-specialKey">Home</div>
+          <div class="line__key line__key-specialKey">PgUp</div>
+          <div class="line__key line__key-specialKey">End</div>
+          <div class="line__key line__key-specialKey">PgDn</div>
+          <div class="line__key line__key-specialKey">Insert</div>
+          <div class="line__key line__key-specialKey">Pause</div>
+          <div class="line__key line__key-specialKey">PrtScn</div>
+          <div class="line__key line__key-specialKey">ScrLk</div>
+        </div>
       </div>
-      <div class="right">
-        <div class="line__key line__key--specialKey">Home</div>
-        <div class="line__key line__key--specialKey">PgUp</div>
-        <div class="line__key line__key--specialKey">End</div>
-        <div class="line__key line__key--specialKey">PgDn</div>
-        <div class="line__key line__key--specialKey">Insert</div>
-        <div class="line__key line__key--specialKey">Pause</div>
-        <div class="line__key line__key--specialKey">PrtScn</div>
-        <div class="line__key line__key--specialKey">ScrLk</div>
-      </div>
+      <input id="input" type="text" autofocus />
     </div>
     <script src="main.js"></script>
   </body>
