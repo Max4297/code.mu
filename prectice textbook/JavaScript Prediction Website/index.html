@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="parent">
+      <h1 class="title">Сайт предсказаний на JavaScript</h1>
+      <p class="paragraph">
+        Сейчас мы сделаем сайт, который будет выдавать предсказания. Пусть на
+        этом сайте будет кнопка, по нажатию на которую будет запускаться таймер,
+        который будет каждые 0.1 секунд выводить в в какой-нибудь див случайное
+        число от 1 до некоторого максимального.
+      </p>
+      <p class="paragraph">
+        Под дивом пусть будет другая кнопка, по нажатию на которую пользователь
+        нашего сайта может остановить таймер и зафиксировать некоторое число в
+        диве. Это число будет номером предсказания. После этого покажите
+        пользователю предсказание с этим номером, а все лишние кнопки уберите с
+        экрана, чтобы пользователь не мог получить еще одно предсказание. То
+        есть на один заход на сайт - одно предсказание.
+      </p>
+      <div id="timer">?</div>
+      <div id="text"></div>
+      <button id="start" class="active">узнать свою судьбу</button>
+      <button id="stop">получить предсказание</button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
