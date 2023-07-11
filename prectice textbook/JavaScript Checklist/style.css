@@ -1,0 +1,35 @@
+.parent {
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  width: 150px;
+  padding: 5px;
+}
+
+.list {
+  padding: 0;
+}
+
+.list__item {
+  list-style-type: none;
+}
+
+.list__item-elem {
+  padding-right: 5px;
+}
+
+.list__item-link {
+  padding-right: 5px;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.list__item-link--done {
+  text-decoration: line-through;
+}
