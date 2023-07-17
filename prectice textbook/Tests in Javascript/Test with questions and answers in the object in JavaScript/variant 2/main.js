@@ -1,25 +1,33 @@
 /*
-Завдання 1
+Задание 1
 №1
 Сделайте так, чтобы по нажатию на кнопку выполнилась проверка правильности ответов.
 */
 "use strict";
 
-let questions = {
-  "Вопрос 1?": "ответ 1",
-  "Вопрос 2?": "ответ 2",
-  "Вопрос 3?": "ответ 3",
-};
+let questions = [
+  {
+    text: "вопрос 1?",
+    right: "ответ 1",
+  },
+  {
+    text: "вопрос 2?",
+    right: "ответ 2",
+  },
+  {
+    text: "вопрос 3?",
+    right: "ответ 3",
+  },
+];
 
 let parent = document.querySelector("#test");
 let button = document.querySelector("#button");
-let answers = Object.values(questions);
 
 window.addEventListener("load", function () {
-  for (const question of Object.keys(questions)) {
+  for (let i = 0; i < questions.length; i++) {
     let div = document.createElement("div");
     let p = document.createElement("p");
-    p.textContent = question;
+    p.textContent = questions[i].text;
     div.appendChild(p);
     let input = document.createElement("input");
     div.appendChild(input);
@@ -28,12 +36,12 @@ window.addEventListener("load", function () {
 });
 
 button.addEventListener("click", function () {
-  for (let i = 0; i < answers.length; i++) {
+  for (let i = 0; i < questions.length; i++) {
     let divs = parent.querySelectorAll("div");
     let inputs = parent.querySelectorAll("div input");
-    let answer = answers[i];
+    let rightAnswer = questions[i].right;
     let userAnswer = inputs[i].value;
-    if (userAnswer == answer) {
+    if (userAnswer == rightAnswer) {
       divs[i].classList.remove("wrong");
       divs[i].classList.add("right");
     } else {
