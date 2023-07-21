@@ -6,7 +6,6 @@
 "use strict";
 
 let test = document.querySelector("#test");
-let button = document.querySelector("#button");
 let questions = document.querySelectorAll("#test div input");
 
 for (const input of questions) {
